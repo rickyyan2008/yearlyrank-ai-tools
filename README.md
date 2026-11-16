@@ -47,11 +47,58 @@ In the current published edition, of the 286 families:
 
 Methodology: [https://aitool.yearlyrank.com/rank/methodology/](https://aitool.yearlyrank.com/rank/methodology/)
 
+## Ranking pages
+
+Live English pages (other languages use the same paths with a locale prefix):
+
+- [Home](https://aitool.yearlyrank.com/)
+- [AI tools ranking 2026](https://aitool.yearlyrank.com/rank/) (positions by official score, each type ranked separately)
+- Type rankings: [Apps](https://aitool.yearlyrank.com/rank/app/), [Agents](https://aitool.yearlyrank.com/rank/agent/), [Models](https://aitool.yearlyrank.com/rank/model/), [APIs & platforms](https://aitool.yearlyrank.com/rank/api/)
+- [Categories](https://aitool.yearlyrank.com/category/), for example [Chat assistants](https://aitool.yearlyrank.com/category/chat-assistants/)
+- [Methodology](https://aitool.yearlyrank.com/rank/methodology/)
+- [AI tools list](https://aitool.yearlyrank.com/tools/)
+
+Screenshots of the live site (16 November 2026, Asia/Shanghai):
+
+![YearlyRank AI Tool homepage, desktop](docs/screenshots/home-desktop.png)
+
+![AI tools ranking 2026 page, desktop](docs/screenshots/rank-desktop.png)
+
+![Chat assistants category page, desktop](docs/screenshots/category-chat-assistants-desktop.png)
+
+![Methodology page, desktop](docs/screenshots/methodology-desktop.png)
+
+![YearlyRank AI Tool homepage, mobile](docs/screenshots/home-mobile.png)
+
+## Data file
+
+A CSV of the current edition is in [`data/yearlyrank-aitool-scores-2026-11-15.csv`](data/yearlyrank-aitool-scores-2026-11-15.csv). It lists all **286** families, with the official overall score and position within type where the site publishes them, plus the status `scored` (85), `insufficient_data` (180), or `method_under_review` (21). Column definitions, licence, and limits of reproduction are in [`data/README.md`](data/README.md).
+
+The live site also offers the same official totals at [https://aitool.yearlyrank.com/data/rank-2026.csv](https://aitool.yearlyrank.com/data/rank-2026.csv).
+
+Per-signal values are not published, so this file is not a full input dump. The method is public on the [methodology page](https://aitool.yearlyrank.com/rank/methodology/), and the signals come from public sources anyone can query. That is enough to understand and independently query the same kinds of signals; it is not a claim that every per-signal input can be reproduced exactly.
+
 ## Languages
 
 The 30 language versions are:
 
 English, Deutsch, Français, 日本語, Nederlands, Español, Svenska, Dansk, Norsk, 한국어, 繁體中文, Italiano, Suomi, Português (Brasil), עברית, Polski, العربية, Čeština, Türkçe, Ελληνικά, Magyar, Română, Bahasa Indonesia, ไทย, Tiếng Việt, 简体中文, Hrvatski, Slovenčina, Български, Slovenščina.
+
+## How to participate
+
+To suggest a new AI tool family, or a correction to an existing listing:
+
+- Open a GitHub issue with the [tool submission template](.github/ISSUE_TEMPLATE/tool-submission.md), or
+- Open a pull request that adds a row to [`data/tool-suggestions.md`](data/tool-suggestions.md), or
+- Email the same details to [contact@yearlyrank.com](mailto:contact@yearlyrank.com)
+
+Please include the tool name, official website, type (app, agent, model, or api), a suggested category, and official-source links for the launch date and that the product is still operating in 2026.
+
+The site lists families that are still operating in 2026, with facts checked against verified official sources. Every suggestion is reviewed by a person. Listing is not guaranteed, and neither is a place in the ranking or a score.
+
+Submissions do not change official scores. Scores come only from public signals, as described in the methodology.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full notes.
 
 ## Licence
 
